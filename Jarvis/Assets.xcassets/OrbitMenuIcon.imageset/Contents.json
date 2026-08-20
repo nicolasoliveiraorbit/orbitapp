@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "traybar iconePrancheta 1 cópia 2.png",
+      "idiom" : "mac"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}

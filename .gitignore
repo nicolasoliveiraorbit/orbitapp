@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Build
+Build/
+Products/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Build/SourcePackages/
+
+# Versões compiladas do Orbit
+*.zip
+*.dmg
+*.pkg
+
+# Temporários
+*.tmp
+*.logPackages/
+/Packages/

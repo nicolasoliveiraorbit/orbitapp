@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AABB00013007000000D65B18 /* libllama.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AABB00033007000000D65B18 /* libllama.0.dylib */; };
+		AABB00023007000000D65B18 /* libllama.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AABB00033007000000D65B18 /* libllama.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AABB00043007000000D65B18 /* libllama-common.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AABB00053007000000D65B18 /* libllama-common.0.dylib */; };
+		AABB00063007000000D65B18 /* libllama-common.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AABB00053007000000D65B18 /* libllama-common.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AABB00073007000000D65B18 /* libggml-blas.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AABB00093007000000D65B18 /* libggml-blas.0.dylib */; };
+		AABB00083007000000D65B18 /* libggml-blas.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AABB00093007000000D65B18 /* libggml-blas.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B97D2696302CF41900427A9B /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B97D2695302CF41900427A9B /* Sparkle */; };
+		B9CD3914300591AC00D65B18 /* libggml-metal.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD390F300591AC00D65B18 /* libggml-metal.0.dylib */; };
+		B9CD3915300591AC00D65B18 /* libggml-metal.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B9CD390F300591AC00D65B18 /* libggml-metal.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B9CD3916300591AC00D65B18 /* libggml.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD3910300591AC00D65B18 /* libggml.0.dylib */; };
+		B9CD3917300591AC00D65B18 /* libggml.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B9CD3910300591AC00D65B18 /* libggml.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B9CD3918300591AC00D65B18 /* libwhisper.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD3911300591AC00D65B18 /* libwhisper.1.dylib */; };
+		B9CD3919300591AC00D65B18 /* libwhisper.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B9CD3911300591AC00D65B18 /* libwhisper.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B9CD391A300591AC00D65B18 /* libggml-cpu.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD3912300591AC00D65B18 /* libggml-cpu.0.dylib */; };
+		B9CD391B300591AC00D65B18 /* libggml-cpu.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B9CD3912300591AC00D65B18 /* libggml-cpu.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B9CD391C300591AC00D65B18 /* libggml-base.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD3913300591AC00D65B18 /* libggml-base.0.dylib */; };
+		B9CD391D300591AC00D65B18 /* libggml-base.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B9CD3913300591AC00D65B18 /* libggml-base.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9CD391E300591AC00D65B18 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B9CD3915300591AC00D65B18 /* libggml-metal.0.dylib in Embed Libraries */,
+				B9CD391D300591AC00D65B18 /* libggml-base.0.dylib in Embed Libraries */,
+				B9CD3917300591AC00D65B18 /* libggml.0.dylib in Embed Libraries */,
+				B9CD391B300591AC00D65B18 /* libggml-cpu.0.dylib in Embed Libraries */,
+				B9CD3919300591AC00D65B18 /* libwhisper.1.dylib in Embed Libraries */,
+				AABB00023007000000D65B18 /* libllama.0.dylib in Embed Libraries */,
+				AABB00063007000000D65B18 /* libllama-common.0.dylib in Embed Libraries */,
+				AABB00083007000000D65B18 /* libggml-blas.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AABB00033007000000D65B18 /* libllama.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libllama.0.dylib; path = Jarvis/Frameworks/libllama.0.dylib; sourceTree = SOURCE_ROOT; };
+		AABB00053007000000D65B18 /* libllama-common.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libllama-common.0.dylib"; path = "Jarvis/Frameworks/libllama-common.0.dylib"; sourceTree = SOURCE_ROOT; };
+		AABB00093007000000D65B18 /* libggml-blas.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-blas.0.dylib"; path = "Jarvis/Frameworks/libggml-blas.0.dylib"; sourceTree = SOURCE_ROOT; };
+		B97D2697302CF61F00427A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Orbit/Info.plist; sourceTree = "<group>"; };
+		B9900B4C2FF82366009D52DF /* Orbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CD38F43005896900D65B18 /* libggml-base.0.15.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-base.0.15.3.dylib"; path = "../../../../whisper.cpp/build/bin/libggml-base.0.15.3.dylib"; sourceTree = "<group>"; };
+		B9CD38F53005896900D65B18 /* libggml-metal.0.15.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-metal.0.15.3.dylib"; path = "../../../../whisper.cpp/build/bin/libggml-metal.0.15.3.dylib"; sourceTree = "<group>"; };
+		B9CD38F63005896900D65B18 /* libggml.0.15.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libggml.0.15.3.dylib; path = ../../../../whisper.cpp/build/bin/libggml.0.15.3.dylib; sourceTree = "<group>"; };
+		B9CD38F73005896900D65B18 /* libggml-cpu.0.15.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-cpu.0.15.3.dylib"; path = "../../../../whisper.cpp/build/bin/libggml-cpu.0.15.3.dylib"; sourceTree = "<group>"; };
+		B9CD38F83005896900D65B18 /* libwhisper.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libwhisper.1.9.1.dylib; path = ../../../../whisper.cpp/build/bin/libwhisper.1.9.1.dylib; sourceTree = "<group>"; };
+		B9CD390F300591AC00D65B18 /* libggml-metal.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-metal.0.dylib"; path = "Jarvis/Frameworks/libggml-metal.0.dylib"; sourceTree = SOURCE_ROOT; };
+		B9CD3910300591AC00D65B18 /* libggml.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libggml.0.dylib; path = Jarvis/Frameworks/libggml.0.dylib; sourceTree = SOURCE_ROOT; };
+		B9CD3911300591AC00D65B18 /* libwhisper.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libwhisper.1.dylib; path = "../../../../Desktop/orbit-whisper-libs/libwhisper.1.dylib"; sourceTree = "<group>"; };
+		B9CD3912300591AC00D65B18 /* libggml-cpu.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-cpu.0.dylib"; path = "Jarvis/Frameworks/libggml-cpu.0.dylib"; sourceTree = SOURCE_ROOT; };
+		B9CD3913300591AC00D65B18 /* libggml-base.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libggml-base.0.dylib"; path = "Jarvis/Frameworks/libggml-base.0.dylib"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		B9900BBF2FFF3201009D52DF /* Exceptions for "Jarvis" folder in "Compile Sources" phase from "Orbit" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = B9900B482FF82366009D52DF /* Sources */;
+			membershipExceptions = (
+				"Orbit-Bridge-Header.h",
+			);
+		};
+		B9900BC130006135009D52DF /* Exceptions for "Jarvis" folder in "Copy Bundle Resources" phase from "Orbit" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = B9900B4A2FF82366009D52DF /* Resources */;
+			membershipExceptions = (
+				WhisperBridge.mm,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B9900B4E2FF82366009D52DF /* Jarvis */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B9900BBF2FFF3201009D52DF /* Exceptions for "Jarvis" folder in "Compile Sources" phase from "Orbit" target */,
+				B9900BC130006135009D52DF /* Exceptions for "Jarvis" folder in "Copy Bundle Resources" phase from "Orbit" target */,
+			);
+			path = Jarvis;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9900B492FF82366009D52DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CD3914300591AC00D65B18 /* libggml-metal.0.dylib in Frameworks */,
+				B9CD391C300591AC00D65B18 /* libggml-base.0.dylib in Frameworks */,
+				B9CD3916300591AC00D65B18 /* libggml.0.dylib in Frameworks */,
+				B9CD391A300591AC00D65B18 /* libggml-cpu.0.dylib in Frameworks */,
+				B9CD3918300591AC00D65B18 /* libwhisper.1.dylib in Frameworks */,
+				AABB00013007000000D65B18 /* libllama.0.dylib in Frameworks */,
+				B97D2696302CF41900427A9B /* Sparkle in Frameworks */,
+				AABB00043007000000D65B18 /* libllama-common.0.dylib in Frameworks */,
+				AABB00073007000000D65B18 /* libggml-blas.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9900B432FF82366009D52DF = {
+			isa = PBXGroup;
+			children = (
+				B97D2697302CF61F00427A9B /* Info.plist */,
+				B9900B4E2FF82366009D52DF /* Jarvis */,
+				B9CD38F33005871600D65B18 /* Frameworks */,
+				B9900B4D2FF82366009D52DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9900B4D2FF82366009D52DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9900B4C2FF82366009D52DF /* Orbit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9CD38F33005871600D65B18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9CD3913300591AC00D65B18 /* libggml-base.0.dylib */,
+				B9CD3912300591AC00D65B18 /* libggml-cpu.0.dylib */,
+				B9CD390F300591AC00D65B18 /* libggml-metal.0.dylib */,
+				B9CD3910300591AC00D65B18 /* libggml.0.dylib */,
+				B9CD3911300591AC00D65B18 /* libwhisper.1.dylib */,
+				B9CD38F43005896900D65B18 /* libggml-base.0.15.3.dylib */,
+				B9CD38F73005896900D65B18 /* libggml-cpu.0.15.3.dylib */,
+				B9CD38F53005896900D65B18 /* libggml-metal.0.15.3.dylib */,
+				B9CD38F63005896900D65B18 /* libggml.0.15.3.dylib */,
+				B9CD38F83005896900D65B18 /* libwhisper.1.9.1.dylib */,
+				AABB00033007000000D65B18 /* libllama.0.dylib */,
+				AABB00053007000000D65B18 /* libllama-common.0.dylib */,
+				AABB00093007000000D65B18 /* libggml-blas.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9900B4B2FF82366009D52DF /* Orbit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9900B572FF82367009D52DF /* Build configuration list for PBXNativeTarget "Orbit" */;
+			buildPhases = (
+				B9900B482FF82366009D52DF /* Sources */,
+				B9900B492FF82366009D52DF /* Frameworks */,
+				B9900B4A2FF82366009D52DF /* Resources */,
+				B9CD391E300591AC00D65B18 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B9900B4E2FF82366009D52DF /* Jarvis */,
+			);
+			name = Orbit;
+			packageProductDependencies = (
+				B97D2695302CF41900427A9B /* Sparkle */,
+			);
+			productName = Jarvis;
+			productReference = B9900B4C2FF82366009D52DF /* Orbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9900B442FF82366009D52DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					B9900B4B2FF82366009D52DF = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = B9900B472FF82366009D52DF /* Build configuration list for PBXProject "Orbit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9900B432FF82366009D52DF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B97D2694302CF41900427A9B /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B9900B4D2FF82366009D52DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9900B4B2FF82366009D52DF /* Orbit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9900B4A2FF82366009D52DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9900B482FF82366009D52DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B9900B552FF82367009D52DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2YYZ8D98Q7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9900B562FF82367009D52DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2YYZ8D98Q7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B9900B582FF82367009D52DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jarvis/Orbit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7.0.0;
+				DEVELOPMENT_TEAM = 2YYZ8D98Q7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MOVIES_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MUSIC_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/whisper.cpp/include",
+					"$(HOME)/whisper.cpp/ggml/include",
+				);
+				INFOPLIST_FILE = Orbit/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Jarvis precisa acessar o microfone para gravar áudios nas demandas.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Jarvis/QwenRuntime",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/onnxruntime/capi",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/google/_upb",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/Jarvis/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(HOME)/whisper.cpp/build/bin";
+				MARKETING_VERSION = 7.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehron.orbit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/Jarvis/Orbit-Bridge-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B9900B592FF82367009D52DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jarvis/Orbit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7.0.0;
+				DEVELOPMENT_TEAM = 2YYZ8D98Q7;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MOVIES_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_MUSIC_FOLDER = readwrite;
+				ENABLE_FILE_ACCESS_PICTURE_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HOME)/whisper.cpp/ggml/include",
+					"$(HOME)/whisper.cpp/include",
+				);
+				INFOPLIST_FILE = Orbit/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Jarvis precisa acessar o microfone para gravar áudios nas demandas.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Jarvis/QwenRuntime",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/onnxruntime/capi",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/google/_upb",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/numpy/_core/lib",
+					"$(PROJECT_DIR)/Jarvis/PiperFaberRuntime/python-runtime/lib/python3.9/site-packages/numpy/random/lib",
+					"$(PROJECT_DIR)/Jarvis/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(HOME)/whisper.cpp/build/bin";
+				MARKETING_VERSION = 7.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehron.orbit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/Jarvis/Orbit-Bridge-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9900B472FF82366009D52DF /* Build configuration list for PBXProject "Orbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9900B552FF82367009D52DF /* Debug */,
+				B9900B562FF82367009D52DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9900B572FF82367009D52DF /* Build configuration list for PBXNativeTarget "Orbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9900B582FF82367009D52DF /* Debug */,
+				B9900B592FF82367009D52DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B97D2694302CF41900427A9B /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B97D2695302CF41900427A9B /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B97D2694302CF41900427A9B /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B9900B442FF82366009D52DF /* Project object */;
+}
