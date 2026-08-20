@@ -13246,7 +13246,7 @@ private struct OrbitReleaseNoteSection: Identifiable {
 }
 
 private enum OrbitReleaseNotes {
-    static let version = "7.0.0"
+    static let version = "7.1.0"
 
     static let sections: [OrbitReleaseNoteSection] = [
         OrbitReleaseNoteSection(

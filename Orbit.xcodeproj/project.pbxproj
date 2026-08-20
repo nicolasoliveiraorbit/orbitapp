@@ -13,7 +13,6 @@
 		AABB00063007000000D65B18 /* libllama-common.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AABB00053007000000D65B18 /* libllama-common.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AABB00073007000000D65B18 /* libggml-blas.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AABB00093007000000D65B18 /* libggml-blas.0.dylib */; };
 		AABB00083007000000D65B18 /* libggml-blas.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = AABB00093007000000D65B18 /* libggml-blas.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B97D2696302CF41900427A9B /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B97D2695302CF41900427A9B /* Sparkle */; };
 		B9CD3914300591AC00D65B18 /* libggml-metal.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD390F300591AC00D65B18 /* libggml-metal.0.dylib */; };
 		B9CD3915300591AC00D65B18 /* libggml-metal.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B9CD390F300591AC00D65B18 /* libggml-metal.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B9CD3916300591AC00D65B18 /* libggml.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CD3910300591AC00D65B18 /* libggml.0.dylib */; };
@@ -105,7 +104,6 @@
 				B9CD391A300591AC00D65B18 /* libggml-cpu.0.dylib in Frameworks */,
 				B9CD3918300591AC00D65B18 /* libwhisper.1.dylib in Frameworks */,
 				AABB00013007000000D65B18 /* libllama.0.dylib in Frameworks */,
-				B97D2696302CF41900427A9B /* Sparkle in Frameworks */,
 				AABB00043007000000D65B18 /* libllama-common.0.dylib in Frameworks */,
 				AABB00073007000000D65B18 /* libggml-blas.0.dylib in Frameworks */,
 			);
@@ -173,7 +171,6 @@
 			);
 			name = Orbit;
 			packageProductDependencies = (
-				B97D2695302CF41900427A9B /* Sparkle */,
 			);
 			productName = Jarvis;
 			productReference = B9900B4C2FF82366009D52DF /* Orbit.app */;
@@ -204,7 +201,6 @@
 			mainGroup = B9900B432FF82366009D52DF;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B97D2694302CF41900427A9B /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9900B4D2FF82366009D52DF /* Products */;
@@ -365,7 +361,7 @@
 				CODE_SIGN_ENTITLEMENTS = Jarvis/Orbit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 7.0.0;
+				CURRENT_PROJECT_VERSION = 7.1.0;
 				DEVELOPMENT_TEAM = 2YYZ8D98Q7;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
@@ -408,7 +404,7 @@
 					"$(PROJECT_DIR)/Jarvis/Frameworks",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(HOME)/whisper.cpp/build/bin";
-				MARKETING_VERSION = 7.0.0;
+				MARKETING_VERSION = 7.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehron.orbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -430,7 +426,7 @@
 				CODE_SIGN_ENTITLEMENTS = Jarvis/Orbit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 7.0.0;
+				CURRENT_PROJECT_VERSION = 7.1.0;
 				DEVELOPMENT_TEAM = 2YYZ8D98Q7;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
@@ -473,7 +469,7 @@
 					"$(PROJECT_DIR)/Jarvis/Frameworks",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(HOME)/whisper.cpp/build/bin";
-				MARKETING_VERSION = 7.0.0;
+				MARKETING_VERSION = 7.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehron.orbit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -509,25 +505,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B97D2694302CF41900427A9B /* XCRemoteSwiftPackageReference "Sparkle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.9.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B97D2695302CF41900427A9B /* Sparkle */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B97D2694302CF41900427A9B /* XCRemoteSwiftPackageReference "Sparkle" */;
-			productName = Sparkle;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9900B442FF82366009D52DF /* Project object */;
 }
