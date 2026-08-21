@@ -1,4 +1,4 @@
-# orbitapp
+# Orbit: Organized Routine & Built-in Intelligence Toolkit
 Orbit
 
 Orbit is a native macOS productivity and demand management app powered by local AI.
